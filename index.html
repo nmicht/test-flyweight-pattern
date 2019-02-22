@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Flyweight Pattern's Effect on Performance</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <form>
+      <h1>Test Flyweight Pattern's Effect on Performance</h1>
+      <label for="numberOfObjects">Number of objects to generate</label>
+      <input name="numberOfObjects" id="numberOfObjects" type="number" min="100000" placeholder="100000"/>
+      <button type="button" name="button" onClick="generate()">Generate</button>
+    </form>
+    <section>
+      <div>
+        <h2>With Flyweight</h2>
+        <p>
+          <span class="title">Total Heap Size</span>
+          <span class="amount" id="withTotalHeapSize">0</span>
+        </p>
+        <p>
+          <span class="title">Used Heap Size</span>
+          <span class="amount" id="withUsedHeapSize">0</span>
+        </p>
+      </div>
+      <div>
+        <h2>Without Flyweight</h2>
+        <p>
+          <span class="title">Total Heap Size</span>
+          <span class="amount" id="withoutTotalHeapSize">0</span>
+        </p>
+        <p>
+          <span class="title">Used Heap Size</span>
+          <span class="amount" id="withoutUsedHeapSize">0</span>
+        </p>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
